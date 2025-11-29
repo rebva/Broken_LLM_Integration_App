@@ -5,7 +5,7 @@ import botIcon from './assets/icons/robot_icon_40.png';
 import loadingAnimation from './assets/animations/three-dots.svg';
 
 function App() {
-    const hostname = process.env.REACT_APP_HOST_NAME;
+    const hostname = process.env.REACT_APP_HOST_NAME || window.location.hostname;
     const [inputMessage, setInputMessage] = useState('');
     const [chatLog, setChatLog] = useState([]);
     const [apiUrl, setApiUrl] = useState(`http://${hostname}:8000/prompt-leaking-lv1/`);

@@ -117,7 +117,7 @@ Construct a configuration file for frontend of Broken Chatbot.
 Refer to the example provided below.  
 
 ```bash
-REACT_APP_HOST_NAME=your_host_name
+REACT_APP_HOST_NAME=sawachi2
 ```
 
 7. Placement of `.env` file created in step 5.  
@@ -145,7 +145,7 @@ Execute the command below to initiate the Broken Chatbot.
 Utilize a web browser to access the specified URL.  
 
 ```bash
-http://your_host_name
+http://sawachi2
 ```
 
 ### Note: BASIC authentication  
@@ -219,7 +219,7 @@ Should you wish to import the sample data we have prepared into tables, please u
 You can import these data from phpmyadmin.  
 
 ```
-http://your_host_name:8080
+http://sawachi2:8020
 ```
 
 The credentials for phpmyadmin are as follows.  

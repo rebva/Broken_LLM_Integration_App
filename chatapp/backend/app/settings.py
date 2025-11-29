@@ -17,12 +17,13 @@ class Settings(BaseSettings):
         env_file_encoding = "utf-8"
 
     # LLM (ChatGPT or LLM on Ollama).
-    LLM_PROVIDER: str = "openai"
-    OPENAI_API_KEY: str
-    OPENAI_MODEL_NAME: str
-    OPENAI_MAX_TOKENS: int
-    OPENAI_TEMPERATURE: float
-    OPENAI_VERBOSE: bool
+    LLM_PROVIDER: str = "ollama"
+    # Cloud OpenAI is disabled; keep optional for compatibility.
+    OPENAI_API_KEY: str | None = None
+    OPENAI_MODEL_NAME: str | None = None
+    OPENAI_MAX_TOKENS: int | None = None
+    OPENAI_TEMPERATURE: float | None = None
+    OPENAI_VERBOSE: bool | None = None
     OLLAMA_BASE_URL: str
     OLLAMA_MODEL_NAME: str
     OLLAMA_VERBOSE: bool
